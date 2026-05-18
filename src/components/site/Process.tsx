@@ -13,7 +13,7 @@ export function Process() {
   return (
     <section id="process" className="border-b border-border bg-secondary py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeader eyebrow="Section 04" title="A simple acquisition process" />
+        <SectionHeader eyebrow="Broker process" title="A simple acquisition process" />
         <ol className="mt-16 grid gap-px overflow-hidden rounded-sm border border-border bg-border">
           {steps.map(([t, b], i) => (
             <li key={t} className="grid grid-cols-[auto_1fr] gap-6 bg-card p-8 md:grid-cols-[80px_220px_1fr] md:gap-10 md:p-10">

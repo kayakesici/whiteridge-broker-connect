@@ -24,9 +24,15 @@ export function Footer() {
             </a>
           </nav>
         </div>
-        <div className="mt-16 flex flex-col justify-between gap-3 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/50 md:flex-row">
-          <p>© {new Date().getFullYear()} Whiteridge Capital. All rights reserved.</p>
-          <p>United Kingdom</p>
+        <div className="mt-16 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/50">
+          <p className="max-w-3xl leading-relaxed">
+            Whiteridge Capital reviews opportunities selectively. Submission of an opportunity does
+            not constitute an offer, commitment, or agreement to proceed.
+          </p>
+          <div className="mt-4 flex flex-col justify-between gap-3 md:flex-row">
+            <p>© {new Date().getFullYear()} Whiteridge Capital. All rights reserved.</p>
+            <p>United Kingdom</p>
+          </div>
         </div>
       </div>
     </footer>

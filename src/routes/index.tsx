@@ -6,6 +6,7 @@ import { BuyBox } from "@/components/site/BuyBox";
 import { WhyBrokers } from "@/components/site/WhyBrokers";
 import { Process } from "@/components/site/Process";
 import { About } from "@/components/site/About";
+import { AfterSubmit } from "@/components/site/AfterSubmit";
 import { Submit } from "@/components/site/Submit";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -50,6 +51,7 @@ function Index() {
         <WhyBrokers />
         <Process />
         <About />
+        <AfterSubmit />
         <Submit />
         <Contact />
       </main>

@@ -28,7 +28,7 @@ export function Focus() {
     <section id="focus" className="border-b border-border py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader
-          eyebrow="Section 01"
+          eyebrow="Acquisition focus"
           title="Our acquisition focus"
           copy="We look for established, profitable, owner-operated businesses with durable local demand, repeat or recurring revenue, and clear scope for operational improvement."
         />
