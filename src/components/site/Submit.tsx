@@ -24,10 +24,13 @@ export function Submit() {
     <section id="submit" className="border-b border-border bg-secondary py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader
-          eyebrow="Section 06"
+          eyebrow="Submit an opportunity"
           title="Have a suitable opportunity?"
           copy="For initial review, please send as much of the following as available."
         />
+        <p className="mt-6 max-w-3xl text-sm italic text-muted-foreground">
+          All opportunities are reviewed confidentially and used only for acquisition assessment.
+        </p>
 
         <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.4fr]">
           <ul className="space-y-3 rounded-sm border border-border bg-card p-8">
@@ -99,7 +102,7 @@ export function Submit() {
               type="submit"
               className="mt-8 w-full rounded-sm bg-primary px-6 py-3 text-sm font-medium uppercase tracking-wider text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              {sent ? "Thank you — we will be in touch" : "Submit opportunity"}
+              {sent ? "Thank you. Your opportunity has been submitted for confidential review." : "Submit opportunity"}
             </button>
           </form>
         </div>

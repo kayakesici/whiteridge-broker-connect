@@ -5,7 +5,7 @@ export function Contact() {
     <section id="contact" className="border-b border-border py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader
-          eyebrow="Section 07"
+          eyebrow="Contact"
           title="Contact Whiteridge Capital"
           copy="For broker introductions, acquisition opportunities, or confidential discussions, contact:"
         />

@@ -14,7 +14,7 @@ export function WhyBrokers() {
     <section className="border-b border-border py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader
-          eyebrow="Section 03"
+          eyebrow="Broker process"
           title="Built to move quickly and professionally"
           copy="We understand that brokers need credible buyers who can review opportunities quickly, ask sensible questions, and avoid wasting seller time. Whiteridge uses a structured acquisition process to assess fit, review financials, and progress suitable opportunities efficiently."
         />

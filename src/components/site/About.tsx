@@ -5,7 +5,7 @@ export function About() {
     <section id="about" className="border-b border-border py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader
-          eyebrow="Section 05"
+          eyebrow="About Whiteridge"
           title="A focused acquisition platform for essential UK services"
           copy="Whiteridge Capital was founded by Izaak Rainbow Cooper and Kaya Kesici to acquire and operate profitable UK service businesses. The firm combines investment, M&A, operations, and technology experience to identify good businesses, protect what already works, and improve the systems around them."
         />

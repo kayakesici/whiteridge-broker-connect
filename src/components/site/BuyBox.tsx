@@ -14,7 +14,7 @@ export function BuyBox() {
   return (
     <section id="buybox" className="border-b border-border bg-secondary py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeader eyebrow="Section 02" title="What fits our buy box" />
+        <SectionHeader eyebrow="Buy box" title="What fits our buy box" />
         <div className="mt-16 overflow-hidden rounded-sm border border-border bg-card">
           {rows.map(([k, v], i) => (
             <div
