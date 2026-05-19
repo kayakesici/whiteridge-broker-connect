@@ -1,31 +1,39 @@
-import { SectionHeader } from "./SectionHeader";
-
 const items = [
-  ["Clear buy box", "Defined sectors, sizes, and criteria so you know quickly whether an opportunity fits."],
-  ["Fast initial review", "We respond promptly to teasers and headline information."],
-  ["Professional communication", "Direct, courteous, and informed conversations with brokers and sellers."],
-  ["Serious acquisition intent", "We engage only on opportunities we are genuinely prepared to progress."],
-  ["Flexible deal-by-deal approach", "Structures shaped around the seller's situation, not a rigid template."],
-  ["Respect for broker-led processes", "We work within your process and protect your seller relationships."],
+  "Clear acquisition criteria",
+  "Fast yes/no feedback",
+  "NDA-ready process",
+  "Professional seller communication",
 ];
 
 export function WhyBrokers() {
   return (
-    <section className="border-b border-border py-24 md:py-32">
+    <section id="brokers" className="border-b border-border py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeader
-          eyebrow="Broker process"
-          title="Built to move quickly and professionally"
-          copy="We understand that brokers need credible buyers who can review opportunities quickly, ask sensible questions, and avoid wasting seller time. Whiteridge uses a structured acquisition process to assess fit, review financials, and progress suitable opportunities efficiently."
-        />
-        <div className="mt-16 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
-          {items.map(([t, b]) => (
-            <div key={t} className="bg-card p-8">
-              <div className="mb-3 h-px w-8 bg-[var(--ridge)]" />
-              <h3 className="text-lg text-primary">{t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
-            </div>
-          ))}
+        <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-20">
+          <div>
+            <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
+              Why brokers send us opportunities
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              We know brokers need credible buyers who can review opportunities quickly, ask
+              sensible questions, and avoid wasting seller time.
+            </p>
+          </div>
+          <ul className="grid gap-3 self-center">
+            {items.map((t) => (
+              <li
+                key={t}
+                className="flex items-center gap-3 rounded-lg border border-border bg-card/60 px-5 py-4 text-sm text-foreground"
+              >
+                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--ridge)]/15 text-[var(--ridge)]">
+                  <svg viewBox="0 0 16 16" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 8l3.5 3.5L13 5" />
+                  </svg>
+                </span>
+                {t}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
