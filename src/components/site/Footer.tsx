@@ -8,18 +8,19 @@ export function Footer() {
               <span className="h-1.5 w-1.5 rounded-full bg-[var(--ridge)] shadow-[0_0_10px_var(--ridge-glow)]" />
               Whiteridge Capital
             </div>
-            <p className="mt-3 text-sm text-muted-foreground">
-              Confidential broker discussions welcomed.
+            <p className="mt-3 text-sm text-muted-foreground">whiteridge-capital.co.uk</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Confidential discussions welcomed.
             </p>
           </div>
           <nav className="flex gap-6 text-sm text-muted-foreground">
             <a href="#fits" className="hover:text-foreground">What fits</a>
             <a href="#criteria" className="hover:text-foreground">Criteria</a>
-            <a href="#brokers" className="hover:text-foreground">Brokers</a>
+            <a href="#review" className="hover:text-foreground">Review</a>
             <a href="#submit" className="hover:text-foreground">Contact</a>
           </nav>
         </div>
-        <div className="mt-12 border-t border-border pt-6 text-xs text-muted-foreground">
+        <div className="mt-12 border-t border-border pt-6 text-[11px] text-muted-foreground/80">
           <p className="max-w-3xl leading-relaxed">
             Whiteridge Capital reviews opportunities selectively. Submission of an opportunity does
             not constitute an offer, commitment, or agreement to proceed.

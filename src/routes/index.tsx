@@ -3,7 +3,7 @@ import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { Focus } from "@/components/site/Focus";
 import { BuyBox } from "@/components/site/BuyBox";
-import { WhyBrokers } from "@/components/site/WhyBrokers";
+import { Review } from "@/components/site/Review";
 import { Submit } from "@/components/site/Submit";
 import { Footer } from "@/components/site/Footer";
 
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Whiteridge Capital acquires established, owner-operated UK service businesses. Send a teaser, IM, or broker pack for confidential review.",
+          "Whiteridge Capital acquires established, owner-operated UK service businesses. Send a teaser, IM, or information pack for confidential review.",
       },
       { property: "og:title", content: "Whiteridge Capital — UK Acquisition Platform" },
       {
@@ -44,7 +44,7 @@ function Index() {
         <Hero />
         <Focus />
         <BuyBox />
-        <WhyBrokers />
+        <Review />
         <Submit />
       </main>
       <Footer />

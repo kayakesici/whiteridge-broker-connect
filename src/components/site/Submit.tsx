@@ -4,24 +4,42 @@ const inputCls =
   "w-full rounded-md border border-input bg-background/60 px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-[var(--ridge)] focus:outline-none focus:ring-1 focus:ring-[var(--ridge)]";
 const labelCls = "mb-1.5 block text-xs font-medium text-muted-foreground";
 
+const directEmails = [
+  "kaya@whiteridge-capital.co.uk",
+  "izaak@whiteridge-capital.co.uk",
+];
+
 export function Submit() {
   const [sent, setSent] = useState(false);
 
   return (
     <section id="submit" className="border-b border-border py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid gap-16 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+        <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
           <div>
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
               Send us an opportunity
             </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground">
-              For initial review, send a teaser, IM, broker pack, or short summary of the
-              opportunity.
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground">
+              For initial review, send a teaser, IM, information pack, or short summary of the
+              opportunity. We will confirm fit quickly and move to NDA where appropriate.
             </p>
 
-            <div className="mt-10 space-y-3">
-              {["kaya@whiteridge.capital", "izaak@whiteridge.capital"].map((e) => (
+            <a
+              href="mailto:deals@whiteridge-capital.co.uk"
+              className="mt-10 flex items-center justify-between rounded-xl border border-[var(--ridge)]/40 bg-[var(--ridge)]/10 px-6 py-5 transition-colors hover:bg-[var(--ridge)]/15"
+            >
+              <div>
+                <div className="text-[11px] font-medium uppercase tracking-[0.18em] text-[var(--ridge)]">
+                  Primary
+                </div>
+                <div className="mt-1 text-lg text-foreground">deals@whiteridge-capital.co.uk</div>
+              </div>
+              <span className="text-[var(--ridge)]">→</span>
+            </a>
+
+            <div className="mt-4 space-y-3">
+              {directEmails.map((e) => (
                 <a
                   key={e}
                   href={`mailto:${e}`}
@@ -39,7 +57,7 @@ export function Submit() {
               e.preventDefault();
               setSent(true);
             }}
-            className="rounded-xl border border-border bg-card/60 p-7 md:p-9"
+            className="rounded-xl border border-border bg-card/40 p-7 md:p-9"
           >
             {sent ? (
               <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">
@@ -74,7 +92,7 @@ export function Submit() {
                   <div className="md:col-span-2">
                     <label className={labelCls}>Attachment</label>
                     <label className="flex cursor-pointer items-center justify-between rounded-md border border-dashed border-border bg-background/50 px-4 py-3.5 text-sm text-muted-foreground transition-colors hover:border-[var(--ridge)]/40">
-                      <span>Teasers, IMs, accounts, and broker packs are welcome.</span>
+                      <span>Teasers, IMs, accounts, and information packs are welcome.</span>
                       <input type="file" className="hidden" />
                       <span className="text-xs text-[var(--ridge)]">Attach</span>
                     </label>

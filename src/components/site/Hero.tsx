@@ -38,14 +38,14 @@ export function Hero() {
             Send us a deal
           </a>
           <a
-            href="mailto:kaya@whiteridge.capital"
+            href="mailto:deals@whiteridge-capital.co.uk"
             className="rounded-md border border-border bg-card/50 px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-card"
           >
             Email the team
           </a>
         </div>
         <p className="mt-6 text-xs text-muted-foreground">
-          Confidential broker discussions. NDA-ready. Fast initial review.
+          Confidential discussions. NDA-ready. Fast initial review.
         </p>
       </div>
     </section>
