@@ -9,7 +9,7 @@ export function Nav() {
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#fits" className="hover:text-foreground">What fits</a>
           <a href="#criteria" className="hover:text-foreground">Criteria</a>
-          <a href="#brokers" className="hover:text-foreground">Brokers</a>
+          <a href="#review" className="hover:text-foreground">Review</a>
           <a href="#submit" className="hover:text-foreground">Contact</a>
         </nav>
         <a

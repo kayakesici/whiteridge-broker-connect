@@ -1,22 +1,22 @@
 const items = [
-  "Clear acquisition criteria",
+  "Clear initial fit assessment",
   "Fast yes/no feedback",
-  "NDA-ready process",
-  "Professional seller communication",
+  "NDA-ready review process",
+  "Professional communication",
 ];
 
-export function WhyBrokers() {
+export function Review() {
   return (
-    <section id="brokers" className="border-b border-border py-24 md:py-32">
+    <section id="review" className="border-b border-border py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-20">
           <div>
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
-              Why brokers send us opportunities
+              What to expect
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              We know brokers need credible buyers who can review opportunities quickly, ask
-              sensible questions, and avoid wasting seller time.
+              We review suitable opportunities quickly, communicate clearly, and only progress
+              deals that fit our acquisition criteria.
             </p>
           </div>
           <ul className="grid gap-3 self-center">
