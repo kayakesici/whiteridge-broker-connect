@@ -1,45 +1,42 @@
-import { SectionHeader } from "./SectionHeader";
-
 const cards = [
   {
-    n: "01",
     title: "Trades & home services",
-    body: "HVAC, plumbing, electrical, roofing, and other essential local services.",
+    body: "HVAC, plumbing, electrical, roofing, and related essential services.",
   },
   {
-    n: "02",
-    title: "Healthcare services",
-    body: "Dental, veterinary, physiotherapy, and other regulated hands-on services.",
-  },
-  {
-    n: "03",
-    title: "Commercial cleaning & facilities management",
-    body: "Contract-led B2B services with recurring demand and low customer churn.",
-  },
-  {
-    n: "04",
     title: "Regulatory compliance",
     body: "Fire safety, gas, electrical, health & safety, and other mandated services.",
+  },
+  {
+    title: "Commercial cleaning & FM",
+    body: "Contract-led B2B services with recurring demand.",
+  },
+  {
+    title: "Healthcare services",
+    body: "Dental, veterinary, physiotherapy, and other regulated hands-on services.",
   },
 ];
 
 export function Focus() {
   return (
-    <section id="focus" className="border-b border-border py-24 md:py-32">
+    <section id="fits" className="border-b border-border py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeader
-          eyebrow="Acquisition focus"
-          title="Our acquisition focus"
-          copy="We look for established, profitable, owner-operated businesses with durable local demand, repeat or recurring revenue, and clear scope for operational improvement."
-        />
-        <div className="mt-16 grid gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-2">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-medium tracking-tight md:text-4xl">What fits</h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            We focus on established, profitable, owner-operated service businesses with repeat
+            demand and clear succession rationale.
+          </p>
+        </div>
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {cards.map((c) => (
-            <div key={c.n} className="bg-card p-8 transition-colors hover:bg-accent">
-              <div className="flex items-baseline justify-between border-b border-border pb-4">
-                <h3 className="text-xl text-primary">{c.title}</h3>
-                <span className="font-mono text-xs text-muted-foreground">{c.n}</span>
-              </div>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{c.body}</p>
+            <div
+              key={c.title}
+              className="group rounded-xl border border-border bg-card/60 p-6 transition-colors hover:border-[var(--ridge)]/40 hover:bg-card"
+            >
+              <div className="h-1.5 w-6 rounded-full bg-[var(--ridge)] shadow-[0_0_12px_var(--ridge-glow)]" />
+              <h3 className="mt-5 text-base font-medium text-foreground">{c.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.body}</p>
             </div>
           ))}
         </div>

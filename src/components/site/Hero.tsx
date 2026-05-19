@@ -1,39 +1,52 @@
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden border-b border-border bg-primary text-primary-foreground">
+    <section id="top" className="relative overflow-hidden border-b border-border">
+      {/* subtle radial glow */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.08]"
+        className="pointer-events-none absolute inset-0 opacity-60"
+        style={{
+          background:
+            "radial-gradient(60% 50% at 50% 0%, color-mix(in oklab, var(--ridge) 22%, transparent), transparent 70%)",
+        }}
+      />
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.05]"
         style={{
           backgroundImage:
             "linear-gradient(var(--bone) 1px, transparent 1px), linear-gradient(90deg, var(--bone) 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
+          backgroundSize: "56px 56px",
+          maskImage: "radial-gradient(ellipse at top, black 40%, transparent 75%)",
         }}
       />
-      <div className="relative mx-auto max-w-6xl px-6 py-28 md:py-40">
-        <p className="mb-8 text-xs uppercase tracking-[0.25em] text-primary-foreground/60">
-          UK Acquisition Platform
-        </p>
-        <h1 className="max-w-4xl text-4xl leading-[1.1] md:text-6xl">
-          A straightforward buyer for profitable UK service businesses.
+      <div className="relative mx-auto max-w-5xl px-6 py-28 text-center md:py-40">
+        <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs text-muted-foreground">
+          <span className="h-1.5 w-1.5 rounded-full bg-[var(--ridge)] shadow-[0_0_10px_var(--ridge-glow)]" />
+          UK acquisition platform
+        </div>
+        <h1 className="mx-auto max-w-3xl text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
+          We acquire profitable UK service businesses
         </h1>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-primary-foreground/75">
-          Whiteridge Capital acquires established, owner-operated service businesses across the UK,
-          with a focus on essential sectors, recurring demand, and succession-led opportunities.
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+          Whiteridge Capital is a UK acquisition platform focused on owner-operated service
+          businesses where sellers need a credible, straightforward buyer.
         </p>
-        <div className="mt-12 flex flex-wrap gap-3">
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
           <a
             href="#submit"
-            className="rounded-sm bg-[var(--bone)] px-6 py-3 text-sm font-medium text-primary transition-colors hover:bg-[var(--bone)]/90"
+            className="rounded-md bg-[var(--ridge)] px-5 py-3 text-sm font-medium text-[var(--ink)] transition-opacity hover:opacity-90"
           >
-            Submit an opportunity
+            Send us a deal
           </a>
           <a
-            href="#contact"
-            className="rounded-sm border border-primary-foreground/30 px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+            href="mailto:kaya@whiteridge.capital"
+            className="rounded-md border border-border bg-card/50 px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-card"
           >
-            Contact Whiteridge
+            Email the team
           </a>
         </div>
+        <p className="mt-6 text-xs text-muted-foreground">
+          Confidential broker discussions. NDA-ready. Fast initial review.
+        </p>
       </div>
     </section>
   );
