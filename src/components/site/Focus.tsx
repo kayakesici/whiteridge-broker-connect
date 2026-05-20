@@ -19,7 +19,7 @@ const cards = [
 
 export function Focus() {
   return (
-    <section id="fits" className="border-b border-border py-24 md:py-32">
+    <section id="fits" className="border-b border-border py-12 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-medium tracking-tight md:text-4xl">What fits</h2>
@@ -28,7 +28,7 @@ export function Focus() {
             demand and clear succession rationale.
           </p>
         </div>
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {cards.map((c) => (
             <div
               key={c.title}

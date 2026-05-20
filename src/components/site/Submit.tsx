@@ -13,7 +13,7 @@ export function Submit() {
   const [sent, setSent] = useState(false);
 
   return (
-    <section id="submit" className="border-b border-border py-24 md:py-32">
+    <section id="submit" className="border-b border-border py-12 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
           <div>
@@ -57,7 +57,7 @@ export function Submit() {
               e.preventDefault();
               setSent(true);
             }}
-            className="rounded-xl border border-border bg-card/40 p-7 md:p-9"
+            className="rounded-xl border border-border bg-card/40 p-6 md:p-7"
           >
             {sent ? (
               <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">
