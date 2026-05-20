@@ -35,18 +35,6 @@ export function Submit() {
               <span className="text-[var(--ridge)]">→</span>
             </a>
 
-            <div className="mt-4 space-y-3">
-              {directEmails.map((e) => (
-                <a
-                  key={e}
-                  href={`mailto:${e}`}
-                  className="flex items-center justify-between rounded-lg border border-border bg-card/60 px-5 py-3 text-sm text-foreground transition-colors hover:border-[var(--ridge)]/40"
-                >
-                  <span>{e}</span>
-                  <span className="text-[var(--ridge)]">→</span>
-                </a>
-              ))}
-            </div>
           </div>
 
           <form
