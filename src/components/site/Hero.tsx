@@ -18,7 +18,7 @@ export function Hero() {
           maskImage: "radial-gradient(ellipse at top, black 40%, transparent 75%)",
         }}
       />
-      <div className="relative mx-auto max-w-5xl px-6 py-28 text-center md:py-40">
+      <div className="relative mx-auto flex min-h-[70vh] max-w-5xl flex-col items-center justify-center px-6 py-20 text-center md:py-24">
         <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs text-muted-foreground">
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--ridge)] shadow-[0_0_10px_var(--ridge-glow)]" />
           UK acquisition platform

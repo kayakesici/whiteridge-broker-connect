@@ -13,9 +13,9 @@ export function Submit() {
   const [sent, setSent] = useState(false);
 
   return (
-    <section id="submit" className="border-b border-border py-24 md:py-32">
+    <section id="submit" className="border-b border-border py-12 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
           <div>
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
               Start a confidential review
@@ -27,7 +27,7 @@ export function Submit() {
 
             <a
               href="mailto:deals@whiteridge-capital.co.uk"
-              className="mt-10 flex items-center justify-between rounded-xl border border-[var(--ridge)]/40 bg-[var(--ridge)]/10 px-6 py-5 transition-colors hover:bg-[var(--ridge)]/15"
+              className="mt-8 flex items-center justify-between rounded-xl border border-[var(--ridge)]/40 bg-[var(--ridge)]/10 px-6 py-5 transition-colors hover:bg-[var(--ridge)]/15"
             >
               <div>
                 <div className="text-[11px] font-medium uppercase tracking-[0.18em] text-[var(--ridge)]">
@@ -57,7 +57,7 @@ export function Submit() {
               e.preventDefault();
               setSent(true);
             }}
-            className="rounded-xl border border-border bg-card/40 p-7 md:p-9"
+            className="rounded-xl border border-border bg-card/40 p-6 md:p-7"
           >
             {sent ? (
               <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">
