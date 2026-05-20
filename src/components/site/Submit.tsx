@@ -4,7 +4,7 @@ const inputCls =
   "w-full rounded-md border border-input bg-background/60 px-3.5 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-[var(--ridge)] focus:outline-none focus:ring-1 focus:ring-[var(--ridge)]";
 const labelCls = "mb-1.5 block text-xs font-medium text-muted-foreground";
 
-const directEmails = ["kaya@whiteridge-capital.co.uk", "izaak@whiteridge-capital.co.uk"];
+
 
 export function Submit() {
   const [sent, setSent] = useState(false);
