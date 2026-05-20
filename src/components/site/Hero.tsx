@@ -18,19 +18,19 @@ export function Hero() {
           maskImage: "radial-gradient(ellipse at top, black 40%, transparent 75%)",
         }}
       />
-      <div className="relative mx-auto flex min-h-[70vh] max-w-5xl flex-col items-center justify-center px-6 py-20 text-center md:py-24">
-        <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs text-muted-foreground">
+      <div className="relative mx-auto flex min-h-[520px] max-w-5xl flex-col items-center justify-center px-6 py-16 text-center md:min-h-[580px] md:py-20">
+        <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs text-muted-foreground">
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--ridge)] shadow-[0_0_10px_var(--ridge-glow)]" />
           UK acquisition platform
         </div>
         <h1 className="mx-auto max-w-3xl text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
           We acquire profitable UK service businesses
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+        <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
           Whiteridge Capital is a UK acquisition platform focused on profitable, owner-operated
           service businesses where sellers need a credible, straightforward buyer.
         </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a
             href="#submit"
             className="rounded-md bg-[var(--ridge)] px-5 py-3 text-sm font-medium text-[var(--ink)] transition-opacity hover:opacity-90"
@@ -44,7 +44,7 @@ export function Hero() {
             Email the team
           </a>
         </div>
-        <p className="mt-6 text-xs text-muted-foreground">
+        <p className="mt-5 text-xs text-muted-foreground">
           Confidential discussions. NDA-ready. Fast initial review.
         </p>
       </div>
