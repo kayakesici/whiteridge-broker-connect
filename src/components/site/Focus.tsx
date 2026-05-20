@@ -23,7 +23,10 @@ const criteria = [
   ["Geography", "UK-wide"],
   ["Ownership", "Independent, owner-operated businesses"],
   ["Situation", "Retirement, succession, partial exit, or owner transition"],
-  ["Avoid", "Franchises, distressed businesses, high owner-dependence, single-customer concentration"],
+  [
+    "Avoid",
+    "Franchises, distressed businesses, high owner-dependence, single-customer concentration",
+  ],
 ];
 
 export function Focus() {

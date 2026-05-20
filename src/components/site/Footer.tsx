@@ -9,20 +9,24 @@ export function Footer() {
               Whiteridge Capital
             </div>
             <p className="mt-3 text-sm text-muted-foreground">whiteridge-capital.co.uk</p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Confidential discussions welcomed.
-            </p>
+            <p className="mt-1 text-sm text-muted-foreground">Confidential discussions welcomed.</p>
           </div>
           <nav className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#look-for" className="hover:text-foreground">What we look for</a>
-            <a href="#review" className="hover:text-foreground">Review</a>
-            <a href="#submit" className="hover:text-foreground">Contact</a>
+            <a href="#look-for" className="hover:text-foreground">
+              What we look for
+            </a>
+            <a href="#review" className="hover:text-foreground">
+              Review
+            </a>
+            <a href="#submit" className="hover:text-foreground">
+              Contact
+            </a>
           </nav>
         </div>
         <div className="mt-6 border-t border-border pt-5 text-[11px] text-muted-foreground/80">
           <p className="max-w-3xl leading-relaxed">
-            Whiteridge Capital reviews opportunities selectively. Submission of information does
-            not constitute an offer, commitment, or agreement to proceed.
+            Whiteridge Capital reviews opportunities selectively. Submission of information does not
+            constitute an offer, commitment, or agreement to proceed.
           </p>
           <div className="mt-3 flex flex-col justify-between gap-2 md:flex-row">
             <p>© {new Date().getFullYear()} Whiteridge Capital</p>

@@ -23,9 +23,7 @@ export function Review() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <div className="max-w-xl">
-            <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
-              What to expect
-            </h2>
+            <h2 className="text-3xl font-medium tracking-tight md:text-4xl">What to expect</h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               We review initial information confidentially, respond clearly, and move forward only
               where there is a genuine fit.

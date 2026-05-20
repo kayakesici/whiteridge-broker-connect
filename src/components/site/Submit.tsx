@@ -4,10 +4,7 @@ const inputCls =
   "w-full rounded-md border border-input bg-background/60 px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-[var(--ridge)] focus:outline-none focus:ring-1 focus:ring-[var(--ridge)]";
 const labelCls = "mb-1.5 block text-xs font-medium text-muted-foreground";
 
-const directEmails = [
-  "kaya@whiteridge-capital.co.uk",
-  "izaak@whiteridge-capital.co.uk",
-];
+const directEmails = ["kaya@whiteridge-capital.co.uk", "izaak@whiteridge-capital.co.uk"];
 
 export function Submit() {
   const [sent, setSent] = useState(false);
@@ -21,8 +18,8 @@ export function Submit() {
               Start a conversation
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-muted-foreground">
-              For initial review, share a teaser, IM, information pack, or short company summary.
-              We will confirm fit quickly and move to NDA where appropriate.
+              For initial review, share a teaser, IM, information pack, or short company summary. We
+              will confirm fit quickly and move to NDA where appropriate.
             </p>
 
             <a
@@ -62,7 +59,15 @@ export function Submit() {
             {sent ? (
               <div className="flex h-full min-h-[280px] flex-col items-center justify-center text-center">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--ridge)]/15 text-[var(--ridge)]">
-                  <svg viewBox="0 0 16 16" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    viewBox="0 0 16 16"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <path d="M3 8l3.5 3.5L13 5" />
                   </svg>
                 </div>
