@@ -13,14 +13,14 @@ export function Submit() {
   const [sent, setSent] = useState(false);
 
   return (
-    <section id="submit" className="border-b border-border py-12 md:py-20">
+    <section id="submit" className="border-b border-border py-12 md:py-[72px]">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+        <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-12">
           <div>
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
-              Start a confidential review
+              Start a conversation
             </h2>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground">
+            <p className="mt-4 max-w-lg text-base leading-relaxed text-muted-foreground">
               For initial review, share a teaser, IM, information pack, or short company summary.
               We will confirm fit quickly and move to NDA where appropriate.
             </p>
@@ -57,10 +57,10 @@ export function Submit() {
               e.preventDefault();
               setSent(true);
             }}
-            className="rounded-xl border border-border bg-card/40 p-6 md:p-7"
+            className="rounded-xl border border-border bg-card/40 p-5 md:p-6"
           >
             {sent ? (
-              <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">
+              <div className="flex h-full min-h-[280px] flex-col items-center justify-center text-center">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--ridge)]/15 text-[var(--ridge)]">
                   <svg viewBox="0 0 16 16" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 8l3.5 3.5L13 5" />
@@ -72,7 +72,7 @@ export function Submit() {
               </div>
             ) : (
               <>
-                <div className="grid gap-5 md:grid-cols-2">
+                <div className="grid gap-4 md:grid-cols-2">
                   <div>
                     <label className={labelCls}>Name</label>
                     <input className={inputCls} required />
@@ -87,11 +87,11 @@ export function Submit() {
                   </div>
                   <div className="md:col-span-2">
                     <label className={labelCls}>Message</label>
-                    <textarea rows={4} className={inputCls} />
+                    <textarea rows={3} className={inputCls} />
                   </div>
                   <div className="md:col-span-2">
                     <label className={labelCls}>Attachment</label>
-                    <label className="flex cursor-pointer items-center justify-between rounded-md border border-dashed border-border bg-background/50 px-4 py-3.5 text-sm text-muted-foreground transition-colors hover:border-[var(--ridge)]/40">
+                    <label className="flex cursor-pointer items-center justify-between rounded-md border border-dashed border-border bg-background/50 px-4 py-3 text-sm text-muted-foreground transition-colors hover:border-[var(--ridge)]/40">
                       <span>Teasers, IMs, accounts, and information packs are welcome.</span>
                       <input type="file" className="hidden" />
                       <span className="text-xs text-[var(--ridge)]">Attach</span>
@@ -100,7 +100,7 @@ export function Submit() {
                 </div>
                 <button
                   type="submit"
-                  className="mt-7 w-full rounded-md bg-[var(--ridge)] px-5 py-3 text-sm font-medium text-[var(--ink)] transition-opacity hover:opacity-90"
+                  className="mt-6 w-full rounded-md bg-[var(--ridge)] px-5 py-3 text-sm font-medium text-[var(--ink)] transition-opacity hover:opacity-90"
                 >
                   Start confidential review
                 </button>
