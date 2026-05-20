@@ -16,7 +16,7 @@ export function Nav() {
           href="#submit"
           className="hidden rounded-md bg-[var(--ridge)] px-4 py-2 text-xs font-medium text-[var(--ink)] transition-opacity hover:opacity-90 md:inline-block"
         >
-          Send us a deal
+          Start a conversation
         </a>
       </div>
     </header>

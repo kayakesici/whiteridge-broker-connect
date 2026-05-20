@@ -27,15 +27,15 @@ export function Hero() {
           We acquire profitable UK service businesses
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-          Whiteridge Capital is a UK acquisition platform focused on owner-operated service
-          businesses where sellers need a credible, straightforward buyer.
+          Whiteridge Capital is a UK acquisition platform focused on profitable, owner-operated
+          service businesses where sellers need a credible, straightforward buyer.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <a
             href="#submit"
             className="rounded-md bg-[var(--ridge)] px-5 py-3 text-sm font-medium text-[var(--ink)] transition-opacity hover:opacity-90"
           >
-            Send us a deal
+            Start a conversation
           </a>
           <a
             href="mailto:deals@whiteridge-capital.co.uk"

@@ -18,11 +18,11 @@ export function Submit() {
         <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
           <div>
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
-              Send us an opportunity
+              Start a confidential review
             </h2>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground">
-              For initial review, send a teaser, IM, information pack, or short summary of the
-              opportunity. We will confirm fit quickly and move to NDA where appropriate.
+              For initial review, share a teaser, IM, information pack, or short company summary.
+              We will confirm fit quickly and move to NDA where appropriate.
             </p>
 
             <a
@@ -67,7 +67,7 @@ export function Submit() {
                   </svg>
                 </div>
                 <p className="mt-5 max-w-sm text-base text-foreground">
-                  Thank you. Your opportunity has been submitted for confidential review.
+                  Thank you. Your information has been submitted for confidential review.
                 </p>
               </div>
             ) : (
@@ -102,7 +102,7 @@ export function Submit() {
                   type="submit"
                   className="mt-7 w-full rounded-md bg-[var(--ridge)] px-5 py-3 text-sm font-medium text-[var(--ink)] transition-opacity hover:opacity-90"
                 >
-                  Send opportunity
+                  Start confidential review
                 </button>
                 <p className="mt-4 text-center text-xs text-muted-foreground">
                   Confidential. Reviewed only for acquisition assessment.
