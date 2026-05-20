@@ -4,7 +4,7 @@ const inputCls =
   "w-full rounded-md border border-input bg-background/60 px-3.5 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-[var(--ridge)] focus:outline-none focus:ring-1 focus:ring-[var(--ridge)]";
 const labelCls = "mb-1.5 block text-xs font-medium text-muted-foreground";
 
-const directEmails = ["kaya@whiteridge-capital.co.uk", "izaak@whiteridge-capital.co.uk"];
+
 
 export function Submit() {
   const [sent, setSent] = useState(false);
@@ -35,18 +35,6 @@ export function Submit() {
               <span className="text-[var(--ridge)]">→</span>
             </a>
 
-            <div className="mt-4 space-y-3">
-              {directEmails.map((e) => (
-                <a
-                  key={e}
-                  href={`mailto:${e}`}
-                  className="flex items-center justify-between rounded-lg border border-border bg-card/60 px-5 py-3 text-sm text-foreground transition-colors hover:border-[var(--ridge)]/40"
-                >
-                  <span>{e}</span>
-                  <span className="text-[var(--ridge)]">→</span>
-                </a>
-              ))}
-            </div>
           </div>
 
           <form
