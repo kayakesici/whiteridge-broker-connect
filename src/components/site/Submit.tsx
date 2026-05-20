@@ -15,7 +15,7 @@ export function Submit() {
   return (
     <section id="submit" className="border-b border-border py-12 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
           <div>
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
               Start a confidential review
@@ -27,7 +27,7 @@ export function Submit() {
 
             <a
               href="mailto:deals@whiteridge-capital.co.uk"
-              className="mt-10 flex items-center justify-between rounded-xl border border-[var(--ridge)]/40 bg-[var(--ridge)]/10 px-6 py-5 transition-colors hover:bg-[var(--ridge)]/15"
+              className="mt-8 flex items-center justify-between rounded-xl border border-[var(--ridge)]/40 bg-[var(--ridge)]/10 px-6 py-5 transition-colors hover:bg-[var(--ridge)]/15"
             >
               <div>
                 <div className="text-[11px] font-medium uppercase tracking-[0.18em] text-[var(--ridge)]">
