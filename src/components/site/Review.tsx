@@ -12,7 +12,7 @@ export function Review() {
         <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-20">
           <div>
             <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
-              What to expect
+              Review process
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               We review suitable opportunities quickly, communicate clearly, and only progress

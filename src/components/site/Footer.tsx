@@ -22,7 +22,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t border-border pt-6 text-[11px] text-muted-foreground/80">
           <p className="max-w-3xl leading-relaxed">
-            Whiteridge Capital reviews opportunities selectively. Submission of an opportunity does
+            Whiteridge Capital reviews opportunities selectively. Submission of information does
             not constitute an offer, commitment, or agreement to proceed.
           </p>
           <div className="mt-4 flex flex-col justify-between gap-2 md:flex-row">
